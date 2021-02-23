@@ -20,7 +20,7 @@ console.log(minus(10, 5));
 
 function power (base, exponent = 2) {
     let result = 1;
-    for (let count = 0; count < exponent; count++) {
+    for (let count = 0; count < exponent; count++) {3
         result *= base;
     }
     return result;

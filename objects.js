@@ -1,9 +1,6 @@
 // Javascript object
 // Values of type object are arbitrary collection of properties
 
-// obs on happy
-// let cat = '';
-
 
 // weresquirrel
 // create obejct

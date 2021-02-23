@@ -6,7 +6,7 @@
 let JOURNAL = [
     
     {
-        "senbonZakura": false,
+        senbonZakura : false,
         "senbonZakuraKageyoshi": false,
         "read": false,
         "writeProgram": false,
@@ -141,5 +141,34 @@ let JOURNAL = [
         "chores": true,
         "activities": ["Niggitarian", "sweep", "mop"]
     },
+    {
+        "senbonZakura": false,
+        "senbonZakuraKageyosi": false,
+        "read": true,
+        "writeProgram": true,
+        "chores": true,
+        "activities": ["Niggitarian", "sweep", "mop"]
+    },
 ]; 
 
+function filter (array, test) {
+    let passed = [];
+    for (let element of array) {
+        if (test(element)) {
+            passed.push(element);
+        }
+    }
+    return passed;
+}
+
+// console.log(filter(JOURNAL, journal => journal.read));
+
+function map(array, transform) {
+    let mapped = [];
+    for (let element of array) {
+        mapped.push(transform(element));
+    }
+    return mapped;
+}
+let read = JOURNAL.filter( s => s.read);
+console.log(map(read, s => s.writeProgram));

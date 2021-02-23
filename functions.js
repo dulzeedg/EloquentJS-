@@ -32,6 +32,10 @@ console.log(power(2, 10));
 
 // Some functions produce a value and some dont
 // makeNoise is called for its side effect
-// Functions can be roughly divided into those that are called for their side effects and 
-// those that are called for their reurn value
-// Though it is definitely also possible toboth have side effects and a return value
+// Functions can be roughly divided into those that are called for their 
+// side effects and 
+// those that are called for their return value
+// Though it is definitely also possible to both have side effects and a return value
+// A pure function is a specific kind of value-producing function that not only
+// has no side effects but also doesn't rely on effects from other code-- for example
+// it doesn't read global bindings whose value might change.
